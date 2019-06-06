@@ -1,0 +1,36 @@
+<header id="heading"> 
+  <div class="container">  
+    <div class="row header" >
+            <div class="col-3 text-center logo">
+                <a href="#">
+                    <img src="../assets/images/logo.png" alt="logo" class="rounded-circle" class="img-responsive"/>
+                </a> 
+            </div>
+            <div class="col-9 text-center">
+                <h2>My Company</h2>
+            </div>
+    </div>
+  </div> 
+</header>
+<div id="main-content">
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <router-outlet></router-outlet>
+          </div> 
+        </div>
+    </div>     
+</div>
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 text-center">
+        <button type="button" class="btn btn-success myButton4" (click)="btnClick('form');" name="form" id="form" value="Form">Form</button>
+      </div>
+      <div class="col-6 text-center">        
+        <button type="button" class="btn btn-success myButton4" (click)="btnClick('view');" name="view" id="view" value="View">View</button>
+      </div>
+    </div>
+  </div>      
+</footer>
